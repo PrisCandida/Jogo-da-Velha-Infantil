@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Jogo da Velha </title>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript" src="externo.js"></script>
+
+    <style>
+
+                  #board td {
+            width: 166.66px;
+            height: 166.66px;
+           /* background-color: white;*/
+        }
+
+        img {
+            object-fit: contain;
+            width: 140px;
+            height: 140px;
+        }
+
+    </style>
+
+
+</head>
+
+<body background="img/fundo3.jpg">
+   <!-- <h1 align="center"><font color="blue">PATRULHA CANINA</font></h1>-->
+    <p align="center">
+        <img src="img/patrulha-canina-logo-DCA9617A2B-seeklogo.com.png" width="300" height="200" alt="imagem" />
+       </p>
+
+   <p align="center">
+   <audio controls autoplay loop>
+    <source src="audio/Patrulha Canina Brasil _ Música Temática (Música) _ Nick Jr..mp4" type="audio/mp3">
+</audio>
+   </p>
+
+    <br><br><br>
+
+
+<table border="0" align="center" width="500" bgcolor="lightblue">
+    <tr><td>
+
+<fieldset>
+    <legend align="center"><strong> JOGO DA VELHA </strong></legend> <br>
+<form>
+<table border="0" cellpadding="2">
+<tr align="left">
+    <td><label> Jogar contra o computador? </label> </td> 
+    
+</tr>
+
+<tr>
+    
+    <td > <label><input type="radio" id="pc" name="pc" value="S"/>
+         SIM </label>
+         <label><input type="radio" id="pc" name="pc" value="N" checked/>
+         NÃO </label> </td>
+</tr>
+
+
+
+</form>
+</fieldset>
+
+</td></tr>
+</table>
+
+<br>
+
+    <table border="1" width="500" height="500" callpadding="10" cellspacing="1" align="center" id="board">
+    <tbody>
+
+<tr>
+    <td><img src="img/transp.png" alt="imagem" id="c1" onclick="return checkjogo(this.id)"/></td>
+    <td><img src="img/transp.png" alt="imagem" id="c2" onclick="return checkjogo(this.id)"/></td>
+    <td><img src="img/transp.png" alt="imagem" id="c3" onclick="return checkjogo(this.id)"/></td>
+</tr>
+
+<tr>
+    <td><img src="img/transp.png" alt="imagem" id="c4" onclick="return checkjogo(this.id)"/></td>
+    <td><img src="img/transp.png" alt="imagem" id="c5" onclick="return checkjogo(this.id)"/></td>
+    <td><img src="img/transp.png" alt="imagem" id="c6" onclick="return checkjogo(this.id)"/></td>
+</tr>
+
+<tr>
+    <td><img src="img/transp.png" alt="imagem" id="c7" onclick="return checkjogo(this.id)"/></td>
+    <td><img src="img/transp.png" alt="imagem" id="c8" onclick="return checkjogo(this.id)"/></td>
+    <td><img src="img/transp.png" alt="imagem" id="c9" onclick="return checkjogo(this.id)"/></td>
+</tr>
+
+
+    </tbody>
+
+</table>
+
+</body>
+
+<script type="text/javascript"></script>
+</html>
